@@ -1,6 +1,7 @@
 from selene.support.shared import browser
 from selene import be, have
 
+
 def test_open_browser(set_window_size):
     browser.open('https://google.com')
     browser.element('[name="q"]').should(be.blank).type('yashaka/selene').press_enter()
